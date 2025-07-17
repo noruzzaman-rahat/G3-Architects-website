@@ -47,6 +47,10 @@ main > section{
 .bg-light{
     background-color: rgba(255, 144, 14, 0.1);
 }
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
 
 /*header style */
 
@@ -105,10 +109,7 @@ main > section{
     margin-left: 130px;
     max-width: 530px;
 }
-.feature-title{
-    font-size: 2.8rem;
-    font-weight: 700;
-}
+
 
 #quick-list{
     font-weight: 500;
