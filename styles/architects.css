@@ -12,7 +12,16 @@
 /*shared styles*/
 .display-flex{
     display: flex;
-    align-items: center;
+}
+
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
 }
 /*dark 02*/
 .text-gray{
@@ -32,18 +41,47 @@
 
 .navbar{
     justify-content: space-between;
+    align-items: center;
 
+}
+.brand{
+    font-weight: bold;
+    font-size: 3rem;
 }
 .nav-item{
     list-style: none;
     margin: 30px;
 }
 
-.nav-link{
+.nav-links{
     text-decoration: none;
     font-weight: 500;
 }
 .navbar, .banner{
     max-width: 1440px;
     margin: 0 auto;
+}
+/*banner related style*/
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title{
+    font-weight: 700;
+    /* 16px = 1 rem*/
+    font-size: 4rem;
+}
+
+.banner-image{
+    width: 100%;
+}
+/*responsive media query*/
+@media screen and (max-width: 576px){
+    .navbar, .nav-links{
+        flex-direction: column;
+    }
+
 }
