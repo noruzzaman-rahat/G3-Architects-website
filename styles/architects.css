@@ -207,6 +207,24 @@ main > section{
     filter: grayscale(100%);
 }
 
+/*footer style*/
+.footer{
+    background-color: #FFF4E7;
+    width: 1440px;
+    height: 100px;
+    margin: 130px auto;
+    border-radius: 8px;
+}
+.landing{
+    font-size: 1.25rem;
+    text-align: center;
+    padding-top: 39px;
+    padding-bottom: 38px;
+    color: #424242;
+    font-weight: 400;
+
+}
+
 
 
 
@@ -215,7 +233,8 @@ main > section{
 @media screen and (max-width: 576px){
     .navbar, 
     .nav-links,
-    .features, 
+    .features,
+    .footer, 
     .teams{
         flex-direction: column;
     }
@@ -241,17 +260,24 @@ main > section{
         margin-left: 20px;
     }
 
+    .footer{
+        width: 100%;
+    }
+
 
     #experience-badge{
         margin-top: 20px;
         margin-left: 20px;
     }
+
 }
 
 
 /*medium size device*/
 @media screen and (min-width: 576px) and (max-width: 992px){
-    .teams, .features{
+    .teams,
+    .footer, 
+    .features{
         flex-direction: column;
     }
     .our-features{
@@ -266,5 +292,8 @@ main > section{
     #experience-badge{
         margin-top: 20px;
         margin-left: 20px;
+    }
+    .footer{
+        width: 100%;
     }
 }
